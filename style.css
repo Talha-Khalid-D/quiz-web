@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(86, 236, 228);;
+}
+
+.navbar {
+    background-color: rgb(86, 236, 228);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border: 1px solid transparent;
+    box-shadow: rgba(99,99,99,0.2)4px 3px 8px 2px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.logo a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: rgb(10, 23, 211);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.navbar ul li a:hover{
+    color: rgb(10, 23, 211);
+}
+
+.nav1{
+    display: none;
+}
+
+.navbar ul li:hover .nav1{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: rgb(86, 236, 228);
+    border: 1px solid transparent;
+}
+
+.nav1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.nav1 ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+.container{
+    max-width: 142rem;
+    margin: 0px 20px 0px 30px;
+    padding: 40px 20px 10px 20px;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-three-cols{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.section-hero .grid {
+    align-items: center;
+    gap: 20px;
+}
+
+.quiz a img{
+    width: 270px;
+    height: 160px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: rgba(99,99,99,0.2)4px 3px 8px 2px;
+}
+
+.quiz a img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
